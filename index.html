@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>curiofeed</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem; max-width: 42rem;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1b1d21; background: #fbfbfc;
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .sub { color: #6b7280; margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .5rem; }
+  a { color: #2563eb; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e7eb; background: #111317; }
+    h1, h2 { color: #f3f4f6; }
+    .sub, footer { color: #9ca3af; }
+    footer { border-top-color: #262a31; }
+    a { color: #7aa2f7; }
+  }
+</style>
+</head>
+<body>
+
+<h1>curiofeed</h1>
+<p class="sub">An automated content pipeline operated by a single individual.</p>
+
+<p>
+  curiofeed selects topics from public YouTube trend data, writes and narrates short
+  educational videos about science, history and curiosities, and uploads them to its
+  operator's own YouTube channel,
+  <a href="https://www.youtube.com/@the-quietunknown">The Quiet Unknown</a>.
+</p>
+
+<h2>Not a public service</h2>
+<p>
+  curiofeed is not available to the public. It runs locally on its operator's machine,
+  authenticates as that operator, and uploads only to that operator's own channel. There
+  are no user accounts and no sign-up: the application has no users other than the person
+  who runs it.
+</p>
+
+<h2>AI-generated content</h2>
+<p>
+  All visuals and narration are AI-generated. Every upload is declared as synthetic media
+  through the YouTube API, and each video is uploaded privately and reviewed by a human
+  before any public release.
+</p>
+
+<h2>Use of the YouTube API</h2>
+<p>
+  curiofeed uses the YouTube Data API to read public trend signals and to upload videos to
+  its operator's own channel. It requests a single OAuth scope, <code>youtube.upload</code>,
+  and does not read, modify or delete data belonging to any other account or channel. Its
+  use of the API is subject to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+</p>
+
+<footer>
+  <a href="privacy.html">Privacy policy</a>
+</footer>
+
+</body>
+</html>
